@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            min-width: 1000px;
+            overflow: auto;
+            line-height: 2;
+        }
+
+        #header {
+            border-bottom: 5px solid #eee;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        #header img.logo {
+            width: 10px;
+            height: 10px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        #header h2 {
+            color: black;
+            font-size: 40px;
+            margin: 0px;
+            font-family: Lato, Arial, sans-serif;
+        }
+
+        #content {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        #otp {
+            background: #008080;
+            /* margin: 0 auto; */
+            width: max-content;
+            padding: 0 10px;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 5px solid #eee;
+        }
+
+        #headers {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="headers">
+        <img style="font-size: 20px; width:60px" class="logo" alt=""
+            src="https://cdn.discordapp.com/attachments/1110481567068979271/1183712282618904616/android-chrome-192x192.png?ex=658954f8&is=6576dff8&hm=e1f468cb722f7eec4f55e3bdf6715265c50b8ff5d6faee992e7773958442bf1e">
+        <h2 style="margin: 0px; font-size: 38px;">Flyhigh</h2>
+    </div>
+    <div id="content">
+        <p style="font-size: 20px">Hello,</p>
+        <p style="font-size: 20px">Thank you for choosing Flyhigh!</p>
+        <p style="font-size: 20px">Use this OTP to complete your Sign Up procedures and verify your account on
+            Flyhigh. Remember, Never share this OTP with anyone.</p>
+        <div style=" display: flex;">
+            <h2>The OTP is:</h2>
+            <h2 id="otp"> {{.}}</h2>
+        </div>
+        <p style="font-size: 20px;">Thank you.<br />Team Flyhigh.</p>
+        <hr>
+    </div>
+</body>
+
+</html>
